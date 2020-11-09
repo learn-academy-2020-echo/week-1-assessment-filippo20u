@@ -193,22 +193,25 @@ var toonsDes =
   //     console.log("350 is above boiling point")
 
 
-//  2nd attempt, it doesn't filter out the cats
+//  2nd attempt, it doesn't filter out the cats.
+// there's an undefined that I'm a little confused where is coming from, i tried to comment out some lines with no success.
+
+const trio = (array) => {
+  array.map(value => {
+    console.log(value.name);
+  })
+}
+
+console.log(trio(destru))
+
+// //  3rd attempt,not working
 // const trio = (array) => {
-//   array.map(value => {
-//     console.log(value.name);
-//   })
+//   array.map(value => { if
+//     (animal !== "cat"){
+//     console.log(value.name)}
+// } 
 // }
 
-console.log(trio(destru))
+// console.log(trio(destru))
 
-//  3rd attempt,not working
-const trio = (array) => {
-  array.map(value => { if
-    (animal !== "cat"){
-    console.log(value.name);
-  }
-}}
-
-console.log(trio(destru))
 
